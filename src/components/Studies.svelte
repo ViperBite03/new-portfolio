@@ -30,7 +30,7 @@
 
 <style lang="scss">
   .studies {
-    //height: 100vh;
+    height: 100vh;
   }
 </style>
 
