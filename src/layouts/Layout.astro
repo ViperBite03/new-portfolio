@@ -1,6 +1,5 @@
 ---
 import Menu from '@/components/essentials/menus/Menu.svelte'
-import Footer from '@/components/essentials/footers/Footer.svelte'
 
 export interface Props {
   title: string
@@ -29,8 +28,6 @@ const title = props.title
     <Menu client:load />
 
     <slot />
-
-    <Footer client:load />
 
     <style lang="scss" is:global>
       @import '@/sass/global.scss';

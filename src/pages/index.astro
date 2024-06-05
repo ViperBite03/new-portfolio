@@ -1,7 +1,35 @@
 ---
 import Layout from '@/layouts/Layout.astro'
+
+import Hero from '@/components/Hero.svelte'
+import AboutMe from '@/components/AboutMe.svelte'
+import Experience from '@/components/Experience.svelte'
+import Studies from '@/components/Studies.svelte'
+import Contact from '@/components/Contact.svelte'
 ---
 
-<Layout title="example">
-  <script></script>
+<style lang="scss" is:global>
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 20px;
+      color: var(--colorBrand) !important;
+      padding: 20px 0;
+    }
+
+    .color {
+      color: var(--colorBrand) !important;
+    }
+  }
+</style>
+
+<Layout title="Laia Martin">
+  <div class="page-container">
+    <Hero />
+    <AboutMe client:load />
+    <Studies />
+    <Experience />
+    <Contact />
+  </div>
 </Layout>
