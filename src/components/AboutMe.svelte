@@ -36,6 +36,11 @@
   .about-me {
     height: fit-content;
 
+    .soft {
+      font-size: 16px;
+      color: var(--colorText3);
+    }
+
     .hobbies {
       display: flex;
       width: 100%;
@@ -72,7 +77,8 @@
     <h2 class="title">Conoce lo peor de mí</h2>
     <p>
       Tengo poca experiencia en el mundo laboral, pero ya he visto que la dinámica consiste en mostrar al mundo una versión perfecta y
-      adulterada de uno mismo, escondiendo los defectos o exagerando la virtudes (incluso inventando). <br /><br />
+      adulterada de uno mismo, escondiendo los defectos o exagerando la virtudes <span class="soft">(incluso inventando)</span>. <br /><br
+      />
       Me expongo a quedar en mal lugar, pero lo que estas viendo aquí es la Laia más humana y honesta, la que vas a ver todos los días.
     </p>
 
@@ -83,9 +89,10 @@
     <h2 class="title">Conoce lo mejor de mí</h2>
 
     <p>
-      A parte de defectos también tengo virtudes (sino qué gracia tendría todo esto, no?) y aunque me guste hablar de lo malo, a todo se le
-      puede sacar algo bueno. <br /><br /> Soy meticulosa y perfeccionista, soy atenta y por mucho que me guste divagar, tambien me gusta
-      hacer las cosas bien y rápido.<br /><br />Estos son algunos de mis hobbies, para que me conozcas más:
+      A parte de defectos también tengo virtudes <span class="soft">(sino qué gracia tendría todo esto, no?)</span> y aunque me guste hablar
+      de lo malo, a todo se le puede sacar algo bueno. <br /><br /> Soy meticulosa y perfeccionista, soy atenta y por mucho que me guste
+      divagar, tambien me gusta hacer las cosas bien y rápido.<br /><br />Estos son algunos de mis hobbies, para que me conozcas más:<br
+      /><br /><br />
     </p>
 
     <div class="hobbies">
