@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Opinions from './generic-ui/Opinions.svelte'
+
   interface IExperience {
     name: string
     date: string
@@ -30,35 +32,43 @@
 </script>
 
 <style lang="scss">
-  .experiences {
+  .career {
+    height: 100vh;
     width: 100%;
-    height: 75vh;
+
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 100px;
 
-    .experience {
+    .experiences {
       display: flex;
-      flex-direction: column;
-      text-align: justify;
-      padding: 20px;
+      margin-bottom: 125px;
+      gap: 50px;
 
-      max-width: 300px;
-      max-height: 300px;
+      .experience {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 20px;
 
-      .name {
-        font-size: 25px;
-        font-weight: bolder;
-      }
+        max-width: 300px;
+        max-height: 300px;
 
-      .date {
-        color: var(--colorText3);
-        margin-bottom: 10px;
-      }
+        .name {
+          font-size: 25px;
+          font-weight: bolder;
+        }
 
-      &.active {
-        opacity: 0.5;
-        border: 1px solid var(--colorText);
-        border-style: dashed;
+        .date {
+          color: var(--colorText3);
+          margin-bottom: 10px;
+        }
+
+        &.active {
+          opacity: 0.5;
+          border: 1px solid var(--colorText);
+          border-style: dashed;
+        }
       }
     }
   }
@@ -76,4 +86,6 @@
       </div>
     {/each}
   </div>
+
+  <Opinions text="No aplico a trabajos que no puedo hacer." author="— Película que me vi la semana pasada" />
 </div>
