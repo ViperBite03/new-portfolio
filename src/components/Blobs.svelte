@@ -48,7 +48,7 @@
       `,
 
       title: 'Obsesión',
-      text: 'Cuando estoy muy enfocada <br> con algo a veces pierdo la <br>noción del tiempo',
+      text: 'Cuando estoy muy enfocada <br> con algo suelo perder la <br>noción del tiempo',
     },
   ]
 </script>
@@ -57,7 +57,7 @@
   .blobs {
     display: flex;
     padding-top: 70px;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
 

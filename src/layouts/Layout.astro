@@ -22,6 +22,7 @@ const title = props.title
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
     <title>{title}</title>
   </head>
   <body>
@@ -29,8 +30,27 @@ const title = props.title
 
     <slot />
 
+    <img src="https://i.pinimg.com/564x/c1/68/63/c168631f7a23cb7b91cf43f5ed10cfe6.jpg" alt="" class="bg" />
+
     <style lang="scss" is:global>
       @import '@/sass/global.scss';
+
+      body {
+        position: relative;
+      }
+
+      .bg {
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 0.1;
+        filter: blur(20px);
+
+        top: 0;
+        left: 0;
+      }
     </style>
   </body>
 </html>
