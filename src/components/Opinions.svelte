@@ -1,8 +1,9 @@
 <script lang="ts">
-  import Svg from '@/components/essentials/Svg.svelte'
+  import Svg from './Svg.svelte'
 
   export let text: string = ''
   export let author: string = ''
+  export let title: string = ''
 </script>
 
 <style lang="scss">
@@ -74,7 +75,7 @@
       <Svg name="quote" width="120" height="120" />
     </div>
     <div class="text">{text}</div>
-    <div class="author" title="El exorcismo de Georgetown">{author}</div>
+    <div class="author" {title}>{author}</div>
 
     <div class="R-quote">
       <Svg name="quote" width="120" height="120" />

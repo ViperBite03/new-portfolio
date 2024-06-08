@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Opinions from './generic-ui/Opinions.svelte'
+  import Opinions from './Opinions.svelte'
 
   interface IExperience {
     name: string
@@ -87,5 +87,9 @@
     {/each}
   </div>
 
-  <Opinions text="No aplico a trabajos que no puedo hacer." author="— Película que me vi la semana pasada" />
+  <Opinions
+    text="No aplico a trabajos para los que no estoy preparada."
+    author="— Película que me vi la semana pasada"
+    title="El exorcismo de Georgetown"
+  />
 </div>

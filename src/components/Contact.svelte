@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Svg from './essentials/Svg.svelte'
+  import Svg from './Svg.svelte'
 
   let show: boolean = false
 
@@ -115,9 +115,9 @@
       </div>
     </div>
 
-    <!--<a href="https://wa.me/671707263" class="link">
+    <a href="https://wa.me/671707263" class="link">
       <div class="name">Háblame por WhatsApp</div>
-    </a>-->
+    </a>
 
     <a href="assets/CV_LaiaMartin.pdf" class="link" download>
       <div class="name">
@@ -134,9 +134,9 @@
         <Svg name="linkedin" height="50" width="50" />
       </a>
 
-      <a href="https://wa.me/671707263" title="WhatsApp" class="icon">
+      <!--<a href="https://wa.me/671707263" title="WhatsApp" class="icon">
         <Svg name="whatsapp" height="45" width="45" />
-      </a>
+      </a>-->
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Svg from '@/components/essentials/Svg.svelte'
+  import Svg from './Svg.svelte'
 </script>
 
 <style lang="scss">
