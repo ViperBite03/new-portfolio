@@ -26,8 +26,10 @@
 </script>
 
 <style lang="scss">
+  @import './../sass/mixins.scss';
+
   .g-wrapper {
-    min-height: 100vh;
+    min-height: 100dvh;
 
     display: flex;
     flex-direction: column;

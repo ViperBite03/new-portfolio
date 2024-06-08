@@ -40,8 +40,10 @@
 </script>
 
 <style lang="scss">
+  @import './../sass/mixins.scss';
+
   .studies {
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     gap: 35px;

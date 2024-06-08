@@ -12,8 +12,10 @@
 </script>
 
 <style lang="scss">
+  @import './../sass/mixins.scss';
+
   .contact {
-    height: 75vh;
+    height: 75dvh;
     display: flex;
     flex-direction: column;
 

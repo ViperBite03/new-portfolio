@@ -32,8 +32,10 @@
 </script>
 
 <style lang="scss">
+  @import './../sass/mixins.scss';
+
   .career {
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
 
     display: flex;

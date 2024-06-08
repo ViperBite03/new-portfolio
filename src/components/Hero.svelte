@@ -3,12 +3,14 @@
 </script>
 
 <style lang="scss">
+  @import './../sass/mixins.scss';
+
   .hero {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100dvh;
 
     .message {
       display: flex;
