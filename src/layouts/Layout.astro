@@ -1,6 +1,4 @@
 ---
-import Menu from '@/components/essentials/menus/Menu.svelte'
-
 export interface Props {
   title: string
 }
@@ -50,5 +48,11 @@ const title = props.title
         left: 0;
       }
     </style>
+
+    <script>
+      import { animReveal } from '@/utils/reveal'
+
+      window.onload = () => animReveal()
+    </script>
   </body>
 </html>

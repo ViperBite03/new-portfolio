@@ -24,7 +24,7 @@
       description: 'Sector energético',
     },
     {
-      name: 'Inserte nombre de tu negocio',
+      name: 'Inserte nombre de su negocio',
       date: 'Incorporación inmediata',
       description: 'Hueco vacío esperando a ser rellenado',
     },
@@ -42,13 +42,14 @@
 
     .experiences {
       display: flex;
+      justify-content: center;
+      width: 100%;
       margin-bottom: 125px;
       gap: 50px;
 
       .experience {
         display: flex;
         flex-direction: column;
-        text-align: justify;
         padding: 20px;
 
         max-width: 300px;
@@ -74,15 +75,15 @@
   }
 </style>
 
-<div class="career g-wrapper">
-  <h2 class="title">Experiencia</h2>
+<div class="career">
+  <h2 class="title g-wrapper">Experiencia</h2>
 
   <div class="experiences">
     {#each experiences as experience, i}
       <div class="experience" class:active={i === 3}>
-        <span class="name">{experience.name}</span>
+        <span class="name" contenteditable={i === 3}>{experience.name}</span>
         <span class="date">{experience.date}</span>
-        <span class="description">{experience.description}</span>
+        <span class="description" contenteditable={i === 3}>{experience.description}</span>
       </div>
     {/each}
   </div>

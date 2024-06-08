@@ -75,14 +75,14 @@
 
 <div class="hero g-wrapper">
   <div class="message">
-    <h2 class="bait color">¿Qué haces aquí?</h2>
+    <h2 class="bait color" reveal>¿Qué haces aquí?</h2>
 
-    <h1>
+    <h1 reveal="0.6">
       Si estás viendo esta web puede ser por dos motivos: <br /> Mi currículum te ha encantado <span class="shade">(normal)</span> o <br />
       no te ha terminado de convencer <span class="shade">(raro, porque es estupendo)</span>
     </h1>
 
-    <h2>En cualquier caso, <span class="color">sigue leyendo.</span></h2>
+    <h2 reveal="0.9">En cualquier caso, <span class="color">sigue leyendo.</span></h2>
   </div>
 
   <Svg name="scroll" width="80" height="80" className="scroll-down" />

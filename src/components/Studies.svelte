@@ -24,7 +24,7 @@
     {
       name: 'Algún que otro curso en LinkedIn',
       date: 'Actualidad',
-      description: 'Se le puede sacar provecho a cualquier cosa, desde cursos en YouTube hasta homologados por LinkedIn',
+      description: 'Se le puede sacar provecho a cualquier cosa, desde cursos de YouTube hasta de LinkedIn',
     },
     {
       name: 'Ingeniería de Sistemas Audiovisuales',
