@@ -35,7 +35,7 @@
   @import './../sass/mixins.scss';
 
   .career {
-    height: 100dvh;
+    min-height: 100 dvh;
     width: 100%;
 
     display: flex;

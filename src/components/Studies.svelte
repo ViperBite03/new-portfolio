@@ -43,7 +43,7 @@
   @import './../sass/mixins.scss';
 
   .studies {
-    height: 100dvh;
+    min-height: 100 dvh;
     display: flex;
     flex-direction: column;
     gap: 35px;

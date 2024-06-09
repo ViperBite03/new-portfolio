@@ -4,23 +4,20 @@
   interface IHobbie {
     name: string
     image: string
-    description: string
   }
 
   const hobbies: IHobbie[] = [
-    { name: 'Programar', image: 'assets/code.png', description: '' },
-    { name: 'Diseñar', image: 'assets/brush.png', description: '' },
+    { name: 'Programar', image: 'assets/code.png' },
+    { name: 'Diseñar', image: 'assets/brush.png' },
     {
       name: 'Leer',
       image: 'assets/book.png',
-      description: '',
     },
-    { name: 'Videojuegos', image: 'assets/controller.png', description: '' },
-    { name: 'Duolingo', image: 'assets/duolingo.png', description: '' },
+    { name: 'Videojuegos', image: 'assets/controller.png' },
+    { name: 'Duolingo', image: 'assets/duolingo.png' },
     {
       name: 'Escuchar música',
       image: 'assets/headphone.png',
-      description: '',
     },
   ]
 </script>
@@ -32,20 +29,21 @@
     display: flex;
     flex-direction: column;
   }
+
   .about-me {
     height: fit-content;
+    gap: 150px;
 
     .worst {
-      height: 100dvh;
+      min-height: 100 dvh;
       margin: 0 auto;
 
       display: flex;
       flex-direction: column;
-      align-items: center;
     }
 
     .best {
-      height: 100dvh;
+      min-height: 100 dvh;
     }
 
     .soft {
@@ -58,6 +56,7 @@
       width: 100%;
       margin: 35px 0;
       justify-content: space-between;
+      flex-shrink: 0;
 
       .card {
         color: var(--colorBackground);
@@ -78,6 +77,18 @@
 
           bottom: 10px;
           right: 10px;
+        }
+      }
+
+      @include notDesktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        .card {
+          width: 100%;
         }
       }
     }

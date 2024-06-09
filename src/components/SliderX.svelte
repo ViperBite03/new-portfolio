@@ -25,6 +25,7 @@
 
   .container-slider {
     margin: auto;
+    width: 100%;
 
     .slider-x {
       height: fit-content;
