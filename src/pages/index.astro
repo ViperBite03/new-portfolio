@@ -12,6 +12,7 @@ import Contact from '@/components/Contact.svelte'
   .page-container {
     display: flex;
     flex-direction: column;
+
     .title {
       font-size: 50px;
       font-weight: bolder;
@@ -32,7 +33,7 @@ import Contact from '@/components/Contact.svelte'
 <Layout title="Laia Martin">
   <div class="page-container">
     <Hero />
-    <AboutMe client:load />
+    <AboutMe client:only />
     <Studies />
     <Experience />
     <Contact client:load />

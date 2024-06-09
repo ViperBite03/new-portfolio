@@ -1,4 +1,6 @@
 <script lang="ts">
+  import SliderX from './SliderX.svelte'
+
   const blobs = [
     {
       svg: `
@@ -54,12 +56,14 @@
 </script>
 
 <style lang="scss">
+  @import './../sass/mixins.scss';
+
   .blobs {
     display: flex;
     padding-top: 70px;
     gap: 20px;
     align-items: center;
-    justify-content: center;
+    overflow-y: hidden;
 
     .blob {
       position: relative;
@@ -111,13 +115,15 @@
 </style>
 
 <div class="blobs">
-  {#each blobs as blob}
-    <div class="blob">
-      <h3>{blob.title}</h3>
-      <p>
-        {@html blob.text}
-      </p>
-      {@html blob.svg}
-    </div>
-  {/each}
+  <SliderX>
+    {#each blobs as blob}
+      <div class="blob">
+        <h3>{blob.title}</h3>
+        <p>
+          {@html blob.text}
+        </p>
+        {@html blob.svg}
+      </div>
+    {/each}
+  </SliderX>
 </div>

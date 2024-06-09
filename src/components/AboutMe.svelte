@@ -29,14 +29,24 @@
   @import './../sass/mixins.scss';
 
   .g-wrapper {
-    min-height: 100dvh;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   .about-me {
     height: fit-content;
+
+    .worst {
+      height: 100dvh;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .best {
+      height: 100dvh;
+    }
 
     .soft {
       font-size: 16px;
@@ -75,19 +85,21 @@
 </style>
 
 <div class="about-me">
-  <div class="g-wrapper">
-    <h2 class="title">Conoce lo peor de mí</h2>
-    <p>
-      Tengo poca experiencia en el mundo laboral, pero ya he visto que la dinámica consiste en mostrar al mundo una versión perfecta y
-      adulterada de uno mismo, escondiendo los defectos o exagerando la virtudes <span class="soft">(incluso inventando)</span>. <br /><br
-      />
-      Me expongo a quedar en mal lugar, pero lo que estas viendo aquí es la Laia más humana y honesta, la que vas a ver todos los días.
-    </p>
+  <div class="worst">
+    <div class="text g-wrapper">
+      <h2 class="title">Conoce lo peor de mí</h2>
+      <p>
+        Tengo poca experiencia en el mundo laboral, pero ya he visto que la dinámica consiste en mostrar al mundo una versión perfecta y
+        adulterada de uno mismo, escondiendo los defectos o exagerando la virtudes <span class="soft">(incluso inventando)</span>. <br /><br
+        />
+        Me expongo a quedar en mal lugar, pero lo que estas viendo aquí es la Laia más humana y honesta, la que vas a ver todos los días.
+      </p>
+    </div>
 
     <Blobs />
   </div>
 
-  <div class="g-wrapper">
+  <div class="best g-wrapper">
     <h2 class="title">Conoce lo mejor de mí</h2>
 
     <p>
