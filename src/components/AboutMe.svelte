@@ -32,11 +32,12 @@
 
   .about-me {
     height: fit-content;
+    display: flex;
+    flex-direction: column;
     gap: 150px;
 
     .worst {
       min-height: 100dvh;
-      margin: 0 auto;
 
       display: flex;
       flex-direction: column;

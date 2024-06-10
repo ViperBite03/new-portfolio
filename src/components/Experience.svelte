@@ -34,6 +34,10 @@
 <style lang="scss">
   @import './../sass/mixins.scss';
 
+  .g-wrapper {
+    padding: 20px 30px;
+  }
+
   .career {
     min-height: 100dvh;
     width: 100%;
@@ -41,6 +45,10 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+
+    @include notDesktop {
+      gap: 35px;
+    }
 
     .experiences {
       display: flex;
@@ -51,7 +59,7 @@
 
       @include notDesktop {
         flex-direction: column;
-        align-items: center;
+        padding: 0 30px;
       }
 
       .experience {

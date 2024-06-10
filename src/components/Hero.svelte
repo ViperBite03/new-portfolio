@@ -25,7 +25,7 @@
         text-align: center;
 
         @include notDesktop {
-          font-size: 38px;
+          font-size: 36px;
         }
       }
 
