@@ -31,7 +31,7 @@
       h1 {
         padding-top: 50px;
         padding-bottom: 25px;
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
 
         @include notDesktop {
@@ -39,16 +39,11 @@
         }
       }
 
-      h2 {
-        font-size: 25px;
+      h3 {
+        font-size: 28px;
         @include notDesktop {
           font-size: 20px;
         }
-      }
-
-      .shade {
-        color: var(--colorText3);
-        font-size: 20px;
       }
     }
 
@@ -91,11 +86,10 @@
     <h2 class="bait color" reveal>¿Qué haces aquí?</h2>
 
     <h1 reveal="0.6">
-      Si estás viendo esta web puede ser por dos motivos: <br /> Mi currículum te ha encantado <span class="shade">(normal)</span> o <br />
-      no te ha terminado de convencer <span class="shade">(raro, porque es estupendo)</span>
+      ¿Mi perfil te ha llamado la atención y quieres saber más <br /> o no tienes idea de quien soy ni de que va esta web?
     </h1>
 
-    <h2 reveal="0.9">En cualquier caso, <span class="color">sigue leyendo.</span></h2>
+    <h3 reveal="0.9">En cualquier caso, <span class="color">sigue leyendo.</span></h3>
   </div>
 
   <Svg name="scroll" width="80" height="80" className="scroll-down" />

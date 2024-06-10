@@ -14,8 +14,13 @@
 <style lang="scss">
   @import './../sass/mixins.scss';
 
+  @include notDesktop {
+    h2 {
+      font-size: 35px !important;
+    }
+  }
   .contact {
-    height: 75dvh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
 
@@ -45,6 +50,10 @@
             color: var(--colorBrand);
             transition: 0.3s ease;
           }
+
+          @include notDesktop {
+            max-width: 310px;
+          }
         }
       }
 
@@ -64,38 +73,55 @@
         }
       }
 
-      .copied {
-        width: fit-content;
-        height: fit-content;
+      .mail {
         display: flex;
-        align-items: center;
-        opacity: 0;
-        cursor: default;
-        transition: 0.3s ease;
+        position: relative;
 
-        &.show {
-          opacity: 0.4;
-          transition: 0.3s ease;
-        }
-
-        .triangle {
-          height: 15px;
-          width: 15px;
-
-          clip-path: polygon(0 50%, 100% 100%, 100% 0);
-          background-color: black;
-          margin-right: -1px;
-        }
-
-        .square {
+        .copied {
+          width: fit-content;
+          height: fit-content;
           display: flex;
-          justify-content: center;
           align-items: center;
-          padding: 8px;
-          border-radius: 8px;
+          opacity: 0;
+          cursor: default;
+          transition: 0.3s ease;
 
-          background-color: black;
-          font-size: 13px;
+          &.show {
+            opacity: 0.4;
+            transition: 0.3s ease;
+          }
+
+          .triangle {
+            height: 15px;
+            width: 15px;
+
+            clip-path: polygon(0 50%, 100% 100%, 100% 0);
+            background-color: black;
+            margin-right: -1px;
+          }
+
+          .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border-radius: 8px;
+
+            background-color: black;
+            font-size: 13px;
+          }
+
+          @include notDesktop {
+            flex-direction: column-reverse;
+            position: absolute;
+
+            top: -55px;
+            left: 35px;
+
+            .triangle {
+              clip-path: polygon(50% 100%, 0 0, 100% 0);
+            }
+          }
         }
       }
     }
@@ -108,7 +134,7 @@
   <div class="links">
     <div class="mail">
       <button class="link" on:click={copy}>
-        <div class="name">Mándame un mail</div>
+        <div class="name">Mándame un email</div>
       </button>
 
       <div class="copied" class:show>
@@ -117,7 +143,7 @@
       </div>
     </div>
 
-    <a href="https://wa.me/671707263" class="link">
+    <a href="https://wa.me/+34671707263" class="link">
       <div class="name">Háblame por WhatsApp</div>
     </a>
 
