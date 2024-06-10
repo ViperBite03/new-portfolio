@@ -9,6 +9,8 @@ import Contact from '@/components/Contact.svelte'
 ---
 
 <style lang="scss" is:global>
+  @import './../sass/mixins.scss';
+
   .page-container {
     display: flex;
     flex-direction: column;
@@ -19,6 +21,10 @@ import Contact from '@/components/Contact.svelte'
       font-weight: bolder;
       color: var(--colorBrand) !important;
       padding: 20px 0;
+
+      @include notDesktop {
+        font-size: 30px;
+      }
     }
 
     .color {
@@ -27,6 +33,10 @@ import Contact from '@/components/Contact.svelte'
 
     p {
       font-size: 22px;
+
+      @include notDesktop {
+        font-size: 16px;
+      }
     }
   }
 </style>
