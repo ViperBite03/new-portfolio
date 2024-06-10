@@ -43,7 +43,7 @@
   @import './../sass/mixins.scss';
 
   .studies {
-    min-height: 100 dvh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -53,6 +53,7 @@
       //align-items: center;
       gap: 20px;
       transform: scale(1.1);
+      margin: 0 15px;
 
       .index {
         height: 40px;
@@ -61,6 +62,8 @@
         color: var(--colorBrand);
         border-radius: 100%;
         font-size: 18px;
+
+        flex-shrink: 0;
 
         display: flex;
         align-items: center;

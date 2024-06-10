@@ -35,7 +35,7 @@
     gap: 150px;
 
     .worst {
-      min-height: 100 dvh;
+      min-height: 100dvh;
       margin: 0 auto;
 
       display: flex;
@@ -43,7 +43,7 @@
     }
 
     .best {
-      min-height: 100 dvh;
+      min-height: 100dvh;
     }
 
     .soft {

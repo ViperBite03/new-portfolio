@@ -7,17 +7,20 @@
 </script>
 
 <style lang="scss">
+  @import 'src/sass/mixins.scss';
+
   .container {
     width: 100%;
     height: fit-content;
-
     position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 
     transform: scale(1.2);
+
+    @include notDesktop {
+      transform: scale(1);
+    }
 
     .opinion {
       transition: 0.3s ease;
@@ -32,7 +35,6 @@
 
       .L-quote,
       .R-quote {
-        height: 50%;
         opacity: 0.3;
         position: absolute;
         z-index: 1;
@@ -41,12 +43,22 @@
       .L-quote {
         top: -20px;
         left: -40px;
+
+        @include notDesktop {
+          top: 0px;
+          left: 20px;
+        }
       }
 
       .R-quote {
         transform: scale(-1);
         bottom: -20px;
         right: -40px;
+
+        @include notDesktop {
+          right: 20px;
+          bottom: 0px;
+        }
       }
 
       .text {
@@ -64,6 +76,11 @@
         margin-right: -240px;
         color: var(--colorText2);
         cursor: default;
+
+        @include notDesktop {
+          margin-right: 0;
+          font-size: 12px;
+        }
       }
     }
   }

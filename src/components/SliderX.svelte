@@ -33,6 +33,11 @@
       overflow-y: hidden;
       opacity: 0;
 
+      @include desktop {
+        display: flex;
+        justify-content: center;
+      }
+
       &.onMounted {
         transition: 0.3s ease;
         opacity: 1;

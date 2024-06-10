@@ -35,7 +35,7 @@
   @import './../sass/mixins.scss';
 
   .career {
-    min-height: 100 dvh;
+    min-height: 100dvh;
     width: 100%;
 
     display: flex;
@@ -48,6 +48,11 @@
       width: 100%;
       margin-bottom: 125px;
       gap: 50px;
+
+      @include notDesktop {
+        flex-direction: column;
+        align-items: center;
+      }
 
       .experience {
         display: flex;

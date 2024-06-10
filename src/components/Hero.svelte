@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100 dvh;
+    min-height: 100dvh;
 
     .message {
       display: flex;
@@ -22,6 +22,10 @@
       .bait {
         font-size: 70px;
         font-weight: bolder;
+
+        @include notDesktop {
+          font-size: 30px;
+        }
       }
 
       h1 {
@@ -29,10 +33,17 @@
         padding-bottom: 25px;
         font-size: 30px;
         text-align: center;
+
+        @include notDesktop {
+          font-size: 20px;
+        }
       }
 
       h2 {
         font-size: 25px;
+        @include notDesktop {
+          font-size: 20px;
+        }
       }
 
       .shade {
