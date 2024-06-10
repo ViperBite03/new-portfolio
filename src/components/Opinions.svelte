@@ -35,7 +35,7 @@
 
       .L-quote,
       .R-quote {
-        opacity: 0.3;
+        opacity: 0.5;
         position: absolute;
         z-index: 1;
       }

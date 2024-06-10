@@ -22,9 +22,10 @@
       .bait {
         font-size: 70px;
         font-weight: bolder;
+        text-align: center;
 
         @include notDesktop {
-          font-size: 30px;
+          font-size: 38px;
         }
       }
 
@@ -36,11 +37,14 @@
 
         @include notDesktop {
           font-size: 20px;
+          max-width: 300px;
         }
       }
 
       h3 {
         font-size: 28px;
+        text-align: center;
+
         @include notDesktop {
           font-size: 20px;
         }

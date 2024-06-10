@@ -143,9 +143,9 @@
       </div>
     </div>
 
-    <a href="https://wa.me/+34671707263" class="link">
+    <!--<a href="https://wa.me/+34671707263" class="link">
       <div class="name">Háblame por WhatsApp</div>
-    </a>
+    </a>-->
 
     <a href="assets/CV_LaiaMartin.pdf" class="link" download>
       <div class="name">
