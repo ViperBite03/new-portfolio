@@ -21,7 +21,7 @@
     {
       name: 'Teleoperadora',
       date: 'Enero 2024 - abril 2024',
-      description: 'Sector energético',
+      description: 'Estuve como teleoperadora en una compañía del sector energético como vendedora telefónica.',
     },
     {
       name: 'Inserte nombre de su negocio',

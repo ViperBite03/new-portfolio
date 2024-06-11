@@ -117,7 +117,7 @@
     <p>
       A parte de defectos también tengo virtudes <span class="soft">(sino qué gracia tendría todo esto, no?)</span> y aunque me guste hablar
       de lo malo, a todo se le puede sacar algo bueno. <br /><br /> Soy meticulosa y perfeccionista, soy atenta y por mucho que me guste
-      divagar, tambien me gusta hacer las cosas bien y rápido.<br /><br />Estos son algunos de mis hobbies, para que me conozcas más:<br
+      divagar, también me gusta hacer las cosas bien y rápido.<br /><br />Estos son algunos de mis hobbies, para que me conozcas más:<br
       /><br /><br />
     </p>
 
