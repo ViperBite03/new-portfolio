@@ -53,16 +53,17 @@
     }
 
     .hobbies {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      justify-content: space-between;
+      gap: 20px;
       width: 100%;
       margin: 35px 0;
-      justify-content: space-between;
-      flex-shrink: 0;
 
       .card {
         color: var(--colorBackground);
         height: 175px;
-        width: 175px;
+        width: 100%;
         padding: 20px;
         border-radius: 20px;
         background-color: rgba(144, 126, 255, 0.6);
@@ -78,18 +79,6 @@
 
           bottom: 10px;
           right: 10px;
-        }
-      }
-
-      @include notDesktop {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-
-        .card {
-          width: 100%;
         }
       }
     }
