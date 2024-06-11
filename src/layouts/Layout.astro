@@ -1,4 +1,5 @@
 ---
+import NavBar from '@/components/NavBar.svelte'
 export interface Props {
   title: string
 }
@@ -24,6 +25,7 @@ const title = props.title
     <title>{title}</title>
   </head>
   <body>
+    <NavBar client:load />
     <slot />
 
     <img src="https://i.pinimg.com/564x/c1/68/63/c168631f7a23cb7b91cf43f5ed10cfe6.jpg" alt="" class="bg" />
