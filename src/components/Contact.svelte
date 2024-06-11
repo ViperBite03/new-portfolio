@@ -1,4 +1,5 @@
 <script lang="ts">
+  import PhotoBlob from './PhotoBlob.svelte'
   import Svg from './Svg.svelte'
 
   let show: boolean = false
@@ -167,4 +168,6 @@
       </a>-->
     </div>
   </div>
+
+  <PhotoBlob />
 </div>

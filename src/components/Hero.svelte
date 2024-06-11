@@ -47,6 +47,7 @@
 
         @include notDesktop {
           font-size: 20px;
+          max-width: 200px;
         }
       }
     }
