@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SliderX from './SliderX.svelte'
+  import Slider from './Slider.svelte'
 
   const blobs = [
     {
@@ -43,11 +43,9 @@
       text: 'Hay épocas en las que me <br> descuido un poco a mí misma',
     },
     {
-      svg: `
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      svg: `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <path d="M31.1,-53.7C40.3,-42.4,47.7,-33.8,52.3,-23.9C56.9,-13.9,58.6,-2.6,57.2,8.4C55.9,19.4,51.6,30.2,45.6,42.7C39.7,55.3,32.2,69.7,20.6,75.5C9,81.3,-6.6,78.6,-19.5,72.2C-32.5,65.8,-42.7,55.9,-55,45.5C-67.3,35.2,-81.7,24.5,-85.6,11C-89.6,-2.4,-83,-18.7,-73.7,-31.3C-64.3,-44,-52.1,-53,-39.3,-62.7C-26.6,-72.3,-13.3,-82.7,-1.2,-80.8C10.9,-79,21.9,-65,31.1,-53.7Z" transform="translate(100 100)" />
-    </svg>
-      `,
+    </svg>`,
 
       title: 'Obsesión',
       text: 'Cuando estoy muy enfocada <br> con algo suelo perder la <br>noción del tiempo',
@@ -72,7 +70,7 @@
       gap: 20px;
       align-items: center;
       justify-content: center;
-      width: 400px;
+      width: 350px;
       height: 300px;
 
       h3 {
@@ -115,7 +113,19 @@
 </style>
 
 <div class="blobs">
-  <SliderX>
+  {#if window.innerWidth < 1070}
+    <Slider>
+      {#each blobs as blob}
+        <div class="blob">
+          <h3>{blob.title}</h3>
+          <p>
+            {@html blob.text}
+          </p>
+          {@html blob.svg}
+        </div>
+      {/each}
+    </Slider>
+  {:else}
     {#each blobs as blob}
       <div class="blob">
         <h3>{blob.title}</h3>
@@ -125,5 +135,5 @@
         {@html blob.svg}
       </div>
     {/each}
-  </SliderX>
+  {/if}
 </div>

@@ -4,8 +4,12 @@
 
 <style lang="scss">
   .container {
+    position: absolute;
     border: 1px solid;
     filter: url(#round);
+
+    right: 0;
+    bottom: 100px;
 
     .blob {
       clip-path: polygon(60% 0, 100% 31%, 100% 83%, 42% 100%, 0% 70%, 5% 21%);

@@ -21,6 +21,7 @@
     }
   }
   .contact {
+    position: relative;
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -169,5 +170,5 @@
     </div>
   </div>
 
-  <PhotoBlob />
+  <!--<PhotoBlob />-->
 </div>
