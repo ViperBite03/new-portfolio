@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Slider from './Slider.svelte'
+  import SliderX from '@/components/SliderX.svelte'
 
   const blobs = [
     {
@@ -61,7 +61,7 @@
     padding-top: 70px;
     gap: 20px;
     align-items: center;
-    overflow-y: hidden;
+    overflow: hidden;
 
     .blob {
       position: relative;
@@ -114,7 +114,7 @@
 
 <div class="blobs">
   {#if window.innerWidth < 1070}
-    <Slider>
+    <SliderX>
       {#each blobs as blob}
         <div class="blob">
           <h3>{blob.title}</h3>
@@ -124,7 +124,7 @@
           {@html blob.svg}
         </div>
       {/each}
-    </Slider>
+    </SliderX>
   {:else}
     {#each blobs as blob}
       <div class="blob">

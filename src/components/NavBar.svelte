@@ -39,8 +39,8 @@
     width: 100%;
     max-height: 100px;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
+
+    backdrop-filter: blur(10px);
     overflow: hidden;
 
     &.active {
@@ -59,6 +59,7 @@
         transition: 0.3s ease;
         height: 70px;
         border-bottom: 1px solid transparent;
+        background-color: rgba(0, 0, 0, 0.5);
 
         @include desktop {
           border-bottom: 1px solid var(--colorBrand);

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { BREAKPOINT } from '@/constants/globalVariables'
   import { onMount } from 'svelte'
   export let showedItems: number = 1
   export let autoSlide: boolean = true
@@ -21,16 +20,13 @@
   let intervalId
 
   const interval = () => {
-    if (autoSlide) {
-      return setInterval(() => {
-        const nextIndex = currentDot < Math.floor(nItems / showedItems) - 1 ? currentDot + 1 : 0
-        sliding(nextIndex)
-      }, 5000)
-    }
+    return setInterval(() => {
+      const nextIndex = currentDot < Math.floor(nItems / showedItems) - 1 ? currentDot + 1 : 0
+      sliding(nextIndex)
+    }, 5000)
   }
 
   onMount(() => {
-    autoSlide = BREAKPOINT < window.innerWidth && autoSlide
     nItems = HTMLSlider.children.length
     HTMLSlider.style.width = calcWidth()
 
@@ -53,7 +49,7 @@
       scroll-snap-type: x mandatory;
 
       @include notDesktop {
-        overflow: scroll;
+        overflow-x: scroll;
 
         &::-webkit-scrollbar {
           display: none;

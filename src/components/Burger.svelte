@@ -10,7 +10,7 @@
     width: 32px;
     height: 24px;
     cursor: pointer;
-    right: 10px;
+    right: 20px;
     z-index: 20;
 
     @include desktop {
