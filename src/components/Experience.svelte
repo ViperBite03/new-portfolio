@@ -34,10 +34,6 @@
 <style lang="scss">
   @import './../sass/mixins.scss';
 
-  .g-wrapper {
-    padding: 20px 30px;
-  }
-
   .career {
     min-height: 100dvh;
     width: 100%;
@@ -90,7 +86,7 @@
   }
 </style>
 
-<div class="career">
+<div id="career" class="career">
   <h2 class="title g-wrapper">Experiencia</h2>
 
   <div class="experiences">

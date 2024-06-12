@@ -78,10 +78,10 @@
   }
 </style>
 
-<div class="studies g-wrapper">
+<div id="studies" class="studies g-wrapper">
   <h2 class="title">Formación</h2>
 
-  <div class="studies">
+  <div>
     {#each studies as study, i}
       <div class="experience">
         <div class="index">{i + 1}</div>

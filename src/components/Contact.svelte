@@ -130,7 +130,7 @@
   }
 </style>
 
-<div class="contact g-wrapper">
+<div id="contact" class="contact g-wrapper">
   <h2 class="title">¿Alguna duda? Hablemos</h2>
 
   <div class="links">

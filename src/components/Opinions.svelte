@@ -16,8 +16,6 @@
     display: flex;
     justify-content: center;
 
-    transform: scale(1.2);
-
     @include notDesktop {
       transform: scale(1);
     }
@@ -63,14 +61,18 @@
 
       .text {
         z-index: 2;
-        font-size: 20px;
+        font-size: 30px;
         text-wrap: balance;
         text-align: center;
         font-weight: bold;
+
+        @include notDesktop {
+          font-size: 20px;
+        }
       }
 
       .author {
-        font-size: 14px;
+        font-size: 20px;
         z-index: 2;
         margin-top: -25px;
         margin-right: -240px;

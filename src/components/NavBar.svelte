@@ -14,21 +14,50 @@
   const items = [
     {
       title: 'Sobre mí',
-      link: '',
+      elem: document.querySelector('#about-me'),
     },
     {
       title: 'Formación',
-      link: '',
+      elem: document.querySelector('#studies'),
     },
     {
       title: 'Experiencia',
-      link: '',
+      elem: document.querySelector('#career'),
     },
     {
       title: 'Contacto',
-      link: '',
+      elem: document.querySelector('#contact'),
     },
   ]
+
+  const scrollTo = (elem: Element) => {
+    elem.scrollIntoView({ behavior: 'smooth' })
+    active = false
+  }
+
+  onMount(() => {
+    function callback(entries: IntersectionObserverEntry[], observer: IntersectionObserver): void {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log('Elemento visible', entry.target.id)
+        }
+      })
+    }
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    }
+
+    const observer = new IntersectionObserver(callback, options)
+
+    console.log('hola')
+
+    for (let item of items) observer.observe(item.elem)
+  })
+
+  //$: document.body.style.overflow = active ? 'hidden' : 'auto'
 </script>
 
 <style lang="scss">
@@ -85,7 +114,7 @@
       padding-right: 10px;
       display: flex;
 
-      a {
+      button {
         transition: 0.3s ease;
         cursor: pointer;
         padding: 30px;
@@ -106,9 +135,11 @@
       align-items: center;
       justify-content: center;
 
+      background-color: rgba(0, 0, 0, 0.5);
+
       height: calc(100dvh);
 
-      a {
+      button {
         padding: 20px;
         width: 100%;
         text-align: center;
@@ -134,7 +165,7 @@
 
     <div class="right-items">
       {#each items as item}
-        <a href={item.link}> {item.title}</a>
+        <button on:click={() => scrollTo(item.elem)}> {item.title}</button>
       {/each}
     </div>
 
@@ -143,7 +174,7 @@
 
   <div class="burger-items" class:slim>
     {#each items as item}
-      <a href={item.link}> {item.title}</a>
+      <button on:click={() => scrollTo(item.elem)}> {item.title}</button>
     {/each}
   </div>
 </div>

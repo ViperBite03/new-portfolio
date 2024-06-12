@@ -85,14 +85,14 @@
   }
 </style>
 
-<div class="about-me">
+<div id="about-me" class="about-me">
   <div class="worst">
     <div class="text g-wrapper">
       <h2 class="title">Conoce lo peor de mí</h2>
       <p>
         Tengo poca experiencia en el mundo laboral, pero ya he visto que la dinámica consiste en mostrar al mundo una versión perfecta y
-        adulterada de uno mismo, escondiendo los defectos o exagerando la virtudes <span class="soft">(incluso inventando)</span>. <br /><br
-        />
+        adulterada de uno mismo, escondiendo los defectos o exagerando las virtudes <span class="soft">(incluso inventando)</span>.
+        <br /><br />
         Me expongo a quedar en mal lugar, pero lo que estas viendo aquí es la Laia más humana y honesta, la que vas a ver todos los días.
       </p>
     </div>
