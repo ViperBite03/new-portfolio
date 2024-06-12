@@ -66,7 +66,7 @@
         display: flex;
         transition: 0.3s ease-in-out;
         padding: 10px 0;
-        overflow-y: hidden;
+        overflow: hidden;
       }
     }
 
@@ -110,14 +110,12 @@
 
 <div class="container-slider">
   <div class="slider-x" class:onMounted>
-    <div class="g-wrapper">
-      <div class="slides" bind:this={HTMLslides} style:gap={gap + 'px'}>
-        <slot />
-      </div>
+    <div class="slides" bind:this={HTMLslides} style:gap={gap + 'px'}>
+      <slot />
     </div>
   </div>
 
-  <div class="arrows g-wrapper">
+  <div class="arrows">
     <button class="arrow left" class:disabled={disablePrev} on:click={previous}>
       <Svg name="arrowSlim" width="25" height="25" fill="var(--colorBrand)" />
     </button>
