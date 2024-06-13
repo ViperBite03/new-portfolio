@@ -1,34 +1,12 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
   import Burger from '@/components/Burger.svelte'
+  import { onMount } from 'svelte'
 
   let slim: boolean = false
   let active: boolean = false
+  let activeSection: string = ''
 
-  onMount(() => {
-    window.addEventListener('scroll', () => {
-      slim = window.scrollY > 10
-    })
-  })
-
-  const items = [
-    {
-      title: 'Sobre mí',
-      elem: document.querySelector('#about-me'),
-    },
-    {
-      title: 'Formación',
-      elem: document.querySelector('#studies'),
-    },
-    {
-      title: 'Experiencia',
-      elem: document.querySelector('#career'),
-    },
-    {
-      title: 'Contacto',
-      elem: document.querySelector('#contact'),
-    },
-  ]
+  let items = []
 
   const scrollTo = (elem: Element) => {
     elem.scrollIntoView({ behavior: 'smooth' })
@@ -36,10 +14,33 @@
   }
 
   onMount(() => {
-    function callback(entries: IntersectionObserverEntry[], observer: IntersectionObserver): void {
+    items = [
+      {
+        title: 'Sobre mí',
+        elem: document.querySelector('#about-me'),
+      },
+      {
+        title: 'Formación',
+        elem: document.querySelector('#studies'),
+      },
+      {
+        title: 'Experiencia',
+        elem: document.querySelector('#career'),
+      },
+      {
+        title: 'Contacto',
+        elem: document.querySelector('#contact'),
+      },
+    ]
+
+    window.addEventListener('scroll', () => {
+      slim = window.scrollY > 10
+    })
+
+    function callback(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log('Elemento visible', entry.target.id)
+          activeSection = entry.target.id
         }
       })
     }
@@ -52,9 +53,14 @@
 
     const observer = new IntersectionObserver(callback, options)
 
-    console.log('hola')
-
-    for (let item of items) observer.observe(item.elem)
+    // Usar requestAnimationFrame para asegurarse de que los elementos están renderizados
+    requestAnimationFrame(() => {
+      for (let item of items) {
+        if (item.elem) {
+          observer.observe(item.elem)
+        }
+      }
+    })
   })
 
   //$: document.body.style.overflow = active ? 'hidden' : 'auto'
@@ -157,6 +163,10 @@
       }
     }
   }
+
+  .activeSection {
+    color: var(--colorBrand);
+  }
 </style>
 
 <div class="navbar-container" class:active>
@@ -165,7 +175,7 @@
 
     <div class="right-items">
       {#each items as item}
-        <button on:click={() => scrollTo(item.elem)}> {item.title}</button>
+        <button class:activeSection={activeSection === item.elem?.id} on:click={() => scrollTo(item.elem)}> {item.title}</button>
       {/each}
     </div>
 
@@ -174,7 +184,7 @@
 
   <div class="burger-items" class:slim>
     {#each items as item}
-      <button on:click={() => scrollTo(item.elem)}> {item.title}</button>
+      <button class:activeSection={activeSection === item.elem?.id} on:click={() => scrollTo(item.elem)}> {item.title}</button>
     {/each}
   </div>
 </div>
