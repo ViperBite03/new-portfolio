@@ -85,8 +85,8 @@
   }
 </style>
 
-<div id="about-me" class="about-me">
-  <div class="worst">
+<div class="about-me">
+  <div class="worst" id="aboutme">
     <div class="text g-wrapper">
       <h2 class="title">Conoce lo peor de mí</h2>
       <p>

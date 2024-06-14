@@ -17,7 +17,7 @@
     items = [
       {
         title: 'Sobre mí',
-        elem: document.querySelector('#about-me'),
+        elem: document.querySelector('#aboutme'),
       },
       {
         title: 'Formación',
