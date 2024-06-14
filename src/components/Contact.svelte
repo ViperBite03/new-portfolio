@@ -131,7 +131,9 @@
 </style>
 
 <div id="contact" class="contact g-wrapper">
-  <h2 class="title">¿Alguna duda? Hablemos</h2>
+  <h2 class="title">Hablemos</h2>
+
+  <p>No se qué poner pero voy a dejar esto para editarlo bonito y pensar algo mejor cuando esté más inspirada.</p>
 
   <div class="links">
     <div class="mail">
@@ -145,9 +147,9 @@
       </div>
     </div>
 
-    <!--<a href="https://wa.me/+34671707263" class="link">
-      <div class="name">Háblame por WhatsApp</div>
-    </a>-->
+    <a href="https://wa.me/+34671707263" class="link" target="_blank">
+      <div class="name">Escríbeme por WhatsApp</div>
+    </a>
 
     <a href="assets/CV_LaiaMartin.pdf" class="link" download>
       <div class="name">
@@ -156,11 +158,11 @@
     </a>
 
     <div class="icons">
-      <a href="https://github.com/ViperBite03" title="GitHub" class="icon">
+      <a href="https://github.com/ViperBite03" title="GitHub" class="icon" target="_blank">
         <Svg name="github" height="50" width="50" />
       </a>
 
-      <a href="https://www.linkedin.com/in/laia-martin-de-la-fuente-660031280/" title="LinkedIn" class="icon">
+      <a href="https://www.linkedin.com/in/laia-martin-de-la-fuente-660031280/" title="LinkedIn" class="icon" target="_blank">
         <Svg name="linkedin" height="50" width="50" />
       </a>
 

@@ -26,6 +26,7 @@
 
         @include notDesktop {
           font-size: 36px;
+          max-width: 275px;
         }
       }
 
@@ -88,13 +89,11 @@
 
 <div class="hero g-wrapper">
   <div class="message">
-    <h2 class="bait color" reveal>¿Qué haces aquí?</h2>
+    <h2 class="bait color" reveal>Si estás aquí, es por algo</h2>
 
-    <h1 reveal="0.6">
-      ¿Mi perfil te ha llamado la atención y quieres saber más <br /> o no tienes idea de quien soy ni de que va esta web?
-    </h1>
+    <h1 reveal="0.6">¿Mi perfil te ha llamado la atención y quieres saber más de mí?</h1>
 
-    <h3 reveal="0.9">En cualquier caso, <span class="color">sigue leyendo.</span></h3>
+    <h3 reveal="0.9">Sigue leyendo y <span class="color"> conóceme</span></h3>
   </div>
 
   <Svg name="scroll" width="80" height="80" className="scroll-down" />

@@ -14,7 +14,7 @@
       image: 'assets/book.png',
     },
     { name: 'Videojuegos', image: 'assets/controller.png' },
-    { name: 'Duolingo', image: 'assets/duolingo.png' },
+    /*{ name: 'Duolingo', image: 'assets/duolingo.png' },*/
     {
       name: 'Escuchar música',
       image: 'assets/headphone.png',

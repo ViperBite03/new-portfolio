@@ -19,8 +19,8 @@
       </svg>
       `,
 
-      title: 'Distracción',
-      text: 'Si carezco de objetivos claros<br> tiendo a divagar',
+      title: '',
+      text: '',
     },
     {
       svg: `
@@ -29,8 +29,8 @@
       </svg>
       `,
 
-      title: 'Sentido',
-      text: 'Sigo buscando<br> mi lugar en el mundo',
+      title: '',
+      text: '',
     },
     {
       svg: `
@@ -39,8 +39,8 @@
       </svg>
       `,
 
-      title: 'Abandono',
-      text: 'Hay épocas en las que me <br> descuido un poco a mí misma',
+      title: '',
+      text: '',
     },
     {
       svg: `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -113,19 +113,7 @@
 </style>
 
 <div class="blobs">
-  {#if window.innerWidth < 1070}
-    <SliderX>
-      {#each blobs as blob}
-        <div class="blob">
-          <h3>{blob.title}</h3>
-          <p>
-            {@html blob.text}
-          </p>
-          {@html blob.svg}
-        </div>
-      {/each}
-    </SliderX>
-  {:else}
+  <SliderX>
     {#each blobs as blob}
       <div class="blob">
         <h3>{blob.title}</h3>
@@ -135,5 +123,5 @@
         {@html blob.svg}
       </div>
     {/each}
-  {/if}
+  </SliderX>
 </div>
