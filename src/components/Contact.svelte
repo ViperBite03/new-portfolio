@@ -133,7 +133,7 @@
 <div id="contact" class="contact g-wrapper">
   <h2 class="title">Hablemos</h2>
 
-  <p>No se qué poner pero voy a dejar esto para editarlo bonito y pensar algo mejor cuando esté más inspirada.</p>
+  <p>Aún te queda mucho por descubrir de mí,</p>
 
   <div class="links">
     <div class="mail">
