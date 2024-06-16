@@ -91,9 +91,9 @@
   <div class="message">
     <h2 class="bait color" reveal>Si estás aquí, es por algo</h2>
 
-    <h1 reveal="0.6">¿Mi perfil te ha llamado la atención y quieres saber más de mí?</h1>
+    <h1 reveal="0.6">Se que tu tiempo es valioso, pero en el peor <br />de los casos te llevarás una sonrisa</h1>
 
-    <h3 reveal="0.9">Sigue leyendo y <span class="color"> conóceme</span></h3>
+    <h3 reveal="0.9">Sigue leyendo y <span class="color"> disfruta</span></h3>
   </div>
 
   <Svg name="scroll" width="80" height="80" className="scroll-down" />

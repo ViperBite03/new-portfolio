@@ -86,7 +86,7 @@
 </style>
 
 <div class="about-me">
-  <div class="worst" id="aboutme">
+  <div class="worst">
     <div class="text g-wrapper">
       <h2 class="title">Conoce lo peor de mí</h2>
       <p>
@@ -100,7 +100,7 @@
     <Blobs />
   </div>
 
-  <div class="best g-wrapper">
+  <div id="aboutme" class="best g-wrapper">
     <h2 class="title">Conoce lo mejor de mí</h2>
 
     <p>
