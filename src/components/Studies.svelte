@@ -33,7 +33,7 @@
     },
     {
       name: 'Japonés en Duolingo',
-      date: 'Racha de 175 días',
+      date: 'Racha de 180 días',
       description: 'Tres minutos al día hacen 1095 minutos al año, que es más que nada',
     },
   ]
@@ -46,33 +46,39 @@
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 50px;
 
-    .experience {
+    .container {
       display: flex;
-      //align-items: center;
-      gap: 20px;
-      transform: scale(1.1);
-      margin: 0 15px;
+      flex-direction: column;
+      gap: 30px;
 
-      .index {
-        height: 40px;
-        width: 40px;
-        border: 1px solid var(--colorBrand);
-        color: var(--colorBrand);
-        border-radius: 100%;
-        font-size: 18px;
-
-        flex-shrink: 0;
-
+      .experience {
         display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+        //align-items: center;
+        gap: 20px;
+        transform: scale(1.1);
+        margin: 0 15px;
 
-      .content {
-        display: flex;
-        flex-direction: column;
+        .index {
+          height: 40px;
+          width: 40px;
+          border: 1px solid var(--colorBrand);
+          color: var(--colorBrand);
+          border-radius: 100%;
+          font-size: 18px;
+
+          flex-shrink: 0;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .content {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }
@@ -81,7 +87,7 @@
 <div id="studies" class="studies g-wrapper">
   <h2 class="title">Formación</h2>
 
-  <div>
+  <div class="container">
     {#each studies as study, i}
       <div class="experience">
         <div class="index">{i + 1}</div>

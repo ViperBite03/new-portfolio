@@ -61,6 +61,7 @@
     padding-top: 70px;
     gap: 20px;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 
     .blob {

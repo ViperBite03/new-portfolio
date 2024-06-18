@@ -85,7 +85,7 @@
   }
 </style>
 
-<div class="about-me">
+<div id="aboutme" class="about-me">
   <div class="worst">
     <div class="text g-wrapper">
       <h2 class="title">Conoce lo peor de mí</h2>
@@ -100,14 +100,13 @@
     <Blobs />
   </div>
 
-  <div id="aboutme" class="best g-wrapper">
+  <div class="best g-wrapper">
     <h2 class="title">Conoce lo mejor de mí</h2>
 
     <p>
       A parte de defectos también tengo virtudes <span class="soft">(sino qué gracia tendría todo esto, no?)</span> y aunque me guste hablar
-      de lo malo, a todo se le puede sacar algo bueno. <br /><br /> Soy meticulosa y perfeccionista, soy atenta y por mucho que me guste
-      divagar, también me gusta hacer las cosas bien y rápido.<br /><br />Estos son algunos de mis hobbies, para que me conozcas más:<br
-      /><br /><br />
+      de lo malo, a todo se le puede sacar algo bueno. <br /><br /> Soy proactiva y curiosa, lo que me ha facilitado aprender muchas cosas
+      de forma autodidácta, no paro quieta así que tengo mil hobbies, estos son algunos de ellos:<br /><br /><br />
     </p>
 
     <div class="hobbies">

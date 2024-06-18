@@ -131,9 +131,9 @@
 </style>
 
 <div id="contact" class="contact g-wrapper">
-  <h2 class="title">Hablemos</h2>
+  <h2 class="title">Si has llegado hasta aquí...</h2>
 
-  <p>Aún te queda mucho por descubrir de mí,</p>
+  <p>Contáctame y en 10 minutos de conversación sabremos si nos aportamos valor mútuamente.</p>
 
   <div class="links">
     <div class="mail">
@@ -172,5 +172,5 @@
     </div>
   </div>
 
-  <!--<PhotoBlob />-->
+  <PhotoBlob photo="public\assets\Laia.jfif" />
 </div>

@@ -71,9 +71,7 @@
     }
 
     .arrows {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
+      display: none;
 
       .arrow {
         width: 50px;
@@ -104,6 +102,14 @@
           background-color: var(--colorBrandSoft);
         }
       }
+    }
+  }
+
+  @include notDesktop {
+    .arrows {
+      display: flex !important;
+      gap: 20px;
+      padding: 20px;
     }
   }
 </style>
