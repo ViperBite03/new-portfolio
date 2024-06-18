@@ -71,7 +71,9 @@
     }
 
     .arrows {
-      display: none;
+      display: flex;
+      gap: 20px;
+      padding: 20px;
 
       .arrow {
         width: 50px;
@@ -105,13 +107,13 @@
     }
   }
 
-  @include notDesktop {
+  /*@include notDesktop {
     .arrows {
       display: flex !important;
       gap: 20px;
       padding: 20px;
     }
-  }
+  }*/
 </style>
 
 <div class="container-slider">
